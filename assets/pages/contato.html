@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-item contato">Home</div>
+            <div class="nav-item">Sobre</div>
+            <div class="nav-item">Contato</div>
+        </nav>
+    </header>
+
+    <h1>Contato</h1>
+
+        <section>
+            <form name="frmContato" method="post" action="#" onsubmit="">
+                <fieldset class="contato">
+                    <legend>Inscreva-se</legend>
+                    <label for="nome">Nome:</label>
+                    <br>
+                    <input type="text" name="txtnome" id="nome">
+                    <br>
+                    <label for="email">E-mail:</label>
+                    <br>
+                    <input type="text" name="txtemail" id="email">
+                    <br>
+                    <label for="comentario">Comente Aqui:</label>
+                    <textarea name="txtacomentario" id="comentario" ></textarea>
+                    <button type="reset">Limpar</button><button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-nav">
+                <div class="footer-item">Home</div>
+                <div class="footer-item">Sobre</div>
+                <div class="footer-item">Contato</div>
+            </div>
+            
+            <div class="footer-email">
+                <p>Inscreva-se para receber novidades:</p>
+                <form action="#" method="POST">
+                    <input type="email" name="email" placeholder="Digite seu email" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </footer>
+</body>
+</html>
