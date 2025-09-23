@@ -3,22 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Pagina Contato</title>
 </head>
 <body>
-    
-    <header class="header">
+
+    <header>
         <nav class="nav">
-            <div class="nav-item contato">Home</div>
-            <div class="nav-item">Sobre</div>
-            <div class="nav-item">Contato</div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
         </nav>
     </header>
 
-    <h1>Contato</h1>
+    <section class="primeira-section-contato">
+
+        <h1>CONTATO</h1>
+
+    </section class="segunda-section-contato">
+
+    
 
         <section>
-            <form name="frmContato" method="post" action="#" onsubmit="">
+            <form name="frmContato" method="post" action="#" onsubmit="return ValidaForm()">
+
                 <fieldset class="contato">
                     <legend>Inscreva-se</legend>
                     <label for="nome">Nome:</label>
@@ -29,9 +39,18 @@
                     <br>
                     <input type="text" name="txtemail" id="email">
                     <br>
-                    <label for="comentario">Comente Aqui:</label>
-                    <textarea name="txtacomentario" id="comentario" ></textarea>
-                    <button type="reset">Limpar</button><button type="submit">Enviar</button>
+                    <label for="fone">Telefone: </label>
+                    <input type="text" name="txtfone" id="fone">
+                    
+                    <label for="comentario">Comentário: <span>(opcional)</span></label>
+                    <textarea name="textcomentario" id="comentario"></textarea>
+                    
+                    <div>
+
+                        <button>Cancelar</button>
+                        <button>Confirmar</button>
+    
+                    </div>
                 </fieldset>
             </form>
         </section>
@@ -42,13 +61,29 @@
                 <div class="footer-item">Sobre</div>
                 <div class="footer-item">Contato</div>
             </div>
-            
+            <!-- Campo de Email -->
             <div class="footer-email">
                 <p>Inscreva-se para receber novidades:</p>
                 <form action="#" method="POST">
                     <input type="email" name="email" placeholder="Digite seu email" required>
                     <button type="submit">Enviar</button>
                 </form>
+            </div>
+            <div class="social-media">
+                <div class="media-icons">
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        <img src="../imgs/icon-facebook.png" alt="Facebook">
+                    </a>
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        <img src="../imgs/icon-instagram.png" alt="Instagram">
+                    </a>
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        <img src="../imgs/icon-whatsapp.png" alt="Whatsapp">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2025 SEC - Soluções Empresariais e Criativos. Todos os direitos reservados.</p>
             </div>
         </footer>
 </body>
