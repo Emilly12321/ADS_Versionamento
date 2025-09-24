@@ -34,6 +34,7 @@ header nav ul a {
   text-align: center;
   color: #fff;
   padding: 0;
+  font-size: 25px;
 }
 
 .section-sobre-1 {
@@ -419,14 +420,13 @@ header nav ul li:hover {
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-
-    color: rgba(255, 255, 255, 0.594);
+      color: rgba(255, 255, 255, 0.594);
     font-size: 20px;
     cursor: pointer;
     transition: color 0.3s ease;
 }
+
+
 
 .footer-item:hover {
     transform: scale(1.2);
