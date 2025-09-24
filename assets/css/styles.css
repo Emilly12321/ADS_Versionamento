@@ -22,20 +22,26 @@ header nav ul {
     justify-content: center;
     gap: clamp(30px, 10vw, 250px);
     list-style: none;
-    letter-spacing: 8px;
     align-items: center;
     padding: 20px 0;
     border: none;
-    z-index: 9999;
+    z-index: 9999;;
 }
 
 header nav ul a {
     text-decoration: none;
     text-align: center;
-    color: #fff;
+    color: #ffffffd2;
     padding: 0;
+    font-size: 25px;
+    
 }
-
+header nav ul li:hover {
+    transform: scale(1.2);
+    a {
+        color: #fff;
+    }
+}
 /* Hero Section */
 .hero {
     height: 100vh;
@@ -283,14 +289,16 @@ header nav ul a {
 }
 
 .footer-item {
-    color: white;
-    font-size: 16px;
+    color: rgba(255, 255, 255, 0.594);
+    font-size: 20px;
     cursor: pointer;
     transition: color 0.3s ease;
 }
 
 .footer-item:hover {
-    color: #3498db;
+    transform: scale(1.2);
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 /* Footer Email */
@@ -432,7 +440,7 @@ header nav ul a {
 
     .footer-email form {
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
     }
 
     .footer-email input[type="email"] {
