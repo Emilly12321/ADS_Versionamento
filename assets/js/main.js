@@ -1,9 +1,11 @@
 
-let emailInput = document.getElementById('email');      // contato.html
-let telefoneInput = document.getElementById('fone');    // contato.html
-let comentario = document.getElementById('comentario'); // contato.html
-let emailFooter = document.getElementById('emailFooter'); // sobre.html
-let botaoEnviar = document.getElementById('enviarEmail'); // sobre.html
+let emailInput = document.getElementById('email');
+let telefoneInput = document.getElementById('fone');
+let comentario = document.getElementById('comentario');
+let emailFooter = document.getElementById('emailFooter');
+let botaoEnviar = document.getElementById('enviarEmail');
+
+const RegEmail = /^[A-Za-z0-9._-]+@(gmail|outlook|hotmail)\.com(\.br)?$/;
 
 
 const palavroes = ["merda", "caquinha", "dianho"];
@@ -24,30 +26,28 @@ function ValidaForm() {
         return false;
     }
 
-    else if (!telefoneInput.value.trim()) {
-        alert("Telefone em branco, favor preencher");
-        telefoneInput.focus();
-        return false;
-    }
+
     else {
 
-        const RegEmail = /^[A-Za-z0-9._-]+@(gmail|outlook|hotmail)\.com(\.br)?$/;
         const RegNome = /^[A-Za-z]{3,}$/;
 
         if (!RegEmail.test(emailInput.value)) {
             alert("E-mail inválido. Use gmail, outlook ou hotmail.");
             emailInput.focus();
             return false;
-        }
-
-        if (!RegNome.test(nomeUsuario)) {
+        } else if (!RegNome.test(nomeUsuario)) {
             alert("Nome inválido. Use pelo menos 3 letras, sem números ou caracteres especiais.");
             nomeInput.focus();
             return false;
+
+        } else if (!telefoneInput.value.trim()) {
+            alert("Telefone em branco, favor preencher");
+            telefoneInput.focus();
+            return false;
         }
 
-        return true; // tudo certo
     }
+    return true;
 }
 
 
@@ -74,18 +74,25 @@ if (comentario) {
 }
 
 if (emailFooter && botaoEnviar) {
+
     botaoEnviar.addEventListener('click', (e) => {
         e.preventDefault();
         const email = emailFooter.value.trim();
+        const RegEmail = /^[A-Za-z0-9._-]+@(gmail|outlook|hotmail)\.com(\.br)?$/;
 
-        if (email) {
-            window.location.href = `/assets/pages/contato.html?email=${encodeURIComponent(email)}`;
+
+        if (!RegEmail.test(email)) {
+            alert("E-mail inválido. Use gmail, outlook ou hotmail.");
+            emailInput.focus();
+            return false;
         } else {
-            alert("Por favor, informe um email.");
+
+            window.location.href = `/assets/pages/contato.html?email=${encodeURIComponent(email)}`;
+
+
         }
     });
 }
-
 
 if (emailInput) {
     const params = new URLSearchParams(window.location.search);
@@ -93,3 +100,4 @@ if (emailInput) {
 
     if (emailDoFooter) emailInput.value = emailDoFooter;
 }
+
