@@ -475,7 +475,7 @@ header nav ul li:hover {
   flex-wrap: wrap;
 }
 
-.footer-email input[type="email"] {
+.footer-email input[type="text"] {
   padding: 10px 15px;
   border-radius: 25px;
   border: none;
@@ -486,7 +486,7 @@ header nav ul li:hover {
   transition: all 0.3s ease;
 }
 
-.footer-email input[type="email"]:focus {
+.footer-email input[type="text"]:focus {
   box-shadow: 0 0 10px rgba(52, 152, 219, 0.7);
 }
 
