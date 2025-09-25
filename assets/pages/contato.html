@@ -1,20 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Pagina Contato</title>
 </head>
+
 <body>
 
     <header>
         <nav class="nav">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -23,67 +24,63 @@
 
         <h1>CONTATO</h1>
 
-    </section >
-    
-        <section class="segunda-section-contato">
-            <form name="frmContato" method="post" action="#" onsubmit="return ValidaForm()">
+    </section>
 
-                <fieldset class="contato">
-                    <legend class="titulo-contato">Inscreva-se</legend>
-                    <label for="nome">Nome:</label>
-                    
-                    <input type="text" name="txtnome" id="nome" placeholder="Seu Nome Completo">
-                    
-                    <label for="email">E-mail:</label>
-                    
-                    <input type="text" name="txtemail" id="email" placeholder="seuemail@exemplo.com">
-                    
-                    <label for="fone">Telefone:</label>
-                    <input type="text" name="txtfone" id="fone" placeholder="(XX) XXXX-XXXX">
-                    
-                    <label for="comentario">Comentário: <span>(opcional)</span></label>
-                    <textarea name="textcomentario" id="comentario" placeholder="Escreva sua mensagem aqui..."></textarea>
-                    
-                    <div>
+    <section class="segunda-section-contato">
+        <form name="frmContato" method="get" action="#" onsubmit="return ValidaForm()">
 
-                        <button>Cancelar</button>
-                        <button>Confirmar</button>
-    
-                    </div>
-                </fieldset>
-            </form>
-        </section>
+            <fieldset class="contato">
+                <legend class="titulo-contato">Inscreva-se</legend>
+                <label for="nome">Nome:</label>
 
-        <footer class="footer">
-            <div class="footer-nav">
-                <div class="footer-item">Home</div>
-                <div class="footer-item">Sobre</div>
-                <div class="footer-item">Contato</div>
-            </div>
-            <!-- Campo de Email -->
-            <div class="footer-email">
-                <p>Inscreva-se para receber novidades:</p>
-                <form action="#" method="POST">
-                    <input type="email" name="email" placeholder="Digite seu email" required>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-            <div class="social-media">
-                <div class="media-icons">
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <img src="../imgs/icon-facebook.png" alt="Facebook">
-                    </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <img src="../imgs/icon-instagram.png" alt="Instagram">
-                    </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <img src="../imgs/icon-whatsapp.png" alt="Whatsapp">
-                    </a>
+                <input type="text" name="txtnome" id="nome" placeholder="Seu Nome Completo">
+
+                <label for="email">E-mail:</label>
+
+                <input type="text" name="txtemail" id="email" placeholder="seuemail@exemplo.com">
+
+                <label for="fone">Telefone:</label>
+                <input type="text" name="txtfone" id="fone" placeholder="(XX) XXXX-XXXX">
+
+                <label for="comentario">Comentário: <span>(opcional)</span></label>
+                <textarea name="textcomentario" id="comentario" placeholder="Escreva sua mensagem aqui..."></textarea>
+
+                <div>
+
+                    <button>Cancelar</button>
+                    <button>Confirmar</button>
+
                 </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-nav">
+            <div class="footer-item"><a href="../../index.html">Home</a></div>
+            <div class="footer-item"><a href="sobre.html">Sobre</a></div>
+            <div class="footer-item"><a href="contato.html">Contato</a></div>
+        </div>
+
+        <div class="social-media">
+            <div class="media-icons">
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <img src="../imgs/icon-facebook.png" alt="Facebook">
+                </a>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <img src="../imgs/icon-instagram.png" alt="Instagram">
+                </a>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <img src="../imgs/icon-whatsapp.png" alt="Whatsapp">
+                </a>
             </div>
-            <div class="footer-copy">
-                <p>&copy; 2025 SEC - Soluções Empresariais e Criativos. Todos os direitos reservados.</p>
-            </div>
-        </footer>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2025 SEC - Soluções Empresariais e Criativos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
 </body>
+
 </html>
