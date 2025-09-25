@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SEC - Soluções, Empresariais e Criativos</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
     <!-- Header -->
     <header>
         <nav class="nav">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="assets/pages/sobre.html">Sobre</a></li>
+                <li><a href="assets/pages/contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -27,7 +29,8 @@
             <p class="tagline">Soluções, Empresariais e Criativos</p>
         </div>
         <div class="hero-image">
-            <img id="hero-building" class="img-hero-building" src="assets/imgs/predio_home.jpg" alt="Imagem de prédio representando soluções empresariais">
+            <img id="hero-building" class="img-hero-building" src="assets/imgs/predio_home.jpg"
+                alt="Imagem de prédio representando soluções empresariais">
         </div>
     </section>
 
@@ -37,7 +40,7 @@
         <div class="services-grid">
             <div class="service-card">
                 <div class="service-icon">
-                     <img src="assets/imgs/chart.png" alt="gráfico" style="width: 90%;">
+                    <img src="assets/imgs/chart.png" alt="gráfico" style="width: 90%;">
                 </div>
                 <p class="service-text">Sua empresa em destaque</p>
             </div>
@@ -89,23 +92,24 @@
             </div>
         </div>
         <div class="feedback-background">
-            <img id="feedback-background" class="img-feedback-background" src="assets/imgs/fundo_linear.jpg" alt="Imagem de fundo linear para seção de feedbacks">
+            <img id="feedback-background" class="img-feedback-background" src="assets/imgs/fundo_linear.jpg"
+                alt="Imagem de fundo linear para seção de feedbacks">
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-nav">
-            <div class="footer-item">Home</div>
-            <div class="footer-item">Sobre</div>
-            <div class="footer-item">Contato</div>
+            <div class="footer-item"><a href="../../index.html">Home</a></div>
+            <div class="footer-item"><a href="sobre.html">Sobre</a></div>
+            <div class="footer-item"><a href="contato.html">Contato</a></div>
         </div>
         <!-- Campo de Email -->
         <div class="footer-email">
             <p>Inscreva-se para receber novidades:</p>
-            <form  method="POST" onsubmit="return ValidaForm()">
-                <input type="email" name="email" placeholder="Digite seu email" required>
-                <button type="submit">Enviar</button>
+            <form method="get">
+                <input type="email" name="email" placeholder="Digite seu email" required id="emailFooter">
+                <button type="submit" id="enviarEmail">Enviar</button>
             </form>
         </div>
         <div class="social-media">
@@ -125,5 +129,7 @@
             <p>&copy; 2025 SEC - Soluções Empresariais e Criativos. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
